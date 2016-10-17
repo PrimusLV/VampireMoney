@@ -1,0 +1,19 @@
+name: VampireMoney
+description: "Steal money from players by just damaging them"
+api: [1.0.0, 2.0.0]
+version: 1.0.0
+author: Primus
+website: https://github.com/PrimusLV/VampireMoney
+main: primus\VampireMoney
+
+permissions:
+  vmoney.*:
+    default: false
+    description: "Top permission node"
+    children:
+      vmoney.steal:
+        default: true
+        description: "Allows to steal money from other players"
+      vmoney.safe:
+        default: false
+        description: "Protects from stealing money attacks"

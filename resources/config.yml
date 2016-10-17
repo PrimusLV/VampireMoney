@@ -1,0 +1,12 @@
+---
+# X = amplifier, Y = damage
+# money = x * y
+amplifier: 5
+# In case money transaction went wrong and you don't want your players to
+# gain an advantage of this, enable safe mode and players money will stay unchanged
+# if such thing occurres
+safe-mode: true
+# Should I take money from player with force if they don't have enough they'll be left with negative number?
+# Depends on your Economy plugin.
+force-steal: false
+...
